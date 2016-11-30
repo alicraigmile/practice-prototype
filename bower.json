@@ -1,0 +1,24 @@
+{
+  "name": "careers",
+  "description": "",
+  "main": "",
+  "authors": [
+    "Ali Craigmile <ali@craigmile.com> (http://ali.craigmile.com)"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/alicraigmile/careers",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-combobox": "^1.1.7",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7",
+    "requirejs": "^2.3.2"
+  }
+}
