@@ -1,4 +1,4 @@
-html
+hcktml
   head
     title
       | #{journey.title} | KS2 Science | BBC Bitesize
@@ -16,8 +16,9 @@ html
           "embed": "http://play.bbc.co.uk/play/sdk/embed/v1/latest"
         }
       });
-    style.
-      body { background: url('#{journey.background}'); padding: 16px; background-position: center;  }
+    if journey.background
+      style.
+        body { background: url('#{journey.background}'); padding: 16px; background-position: center; background-repeat: no-repeat; background-attachment: fixed;}
 
   body 
     .container
@@ -50,7 +51,7 @@ html
       ul
         li
           - var next = parseInt(stepId) + 1;
-          a(href='/journey/steps/'+next) Next step
+          a(href='/journeys/'+journeyId+'/steps/'+next) Next step
 
       aside
         p
