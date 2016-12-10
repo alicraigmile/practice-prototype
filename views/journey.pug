@@ -1,6 +1,6 @@
 html
   head
-    title Embed
+    title= journey.title
     meta(charset="utf-8")
     script(src='/bower_components/requirejs/require.js')
     script(src='/bower_components/jquery/dist/jquery.min.js')
@@ -17,16 +17,17 @@ html
   body
     style.
       #og-frame-holder { border: 1px solid black; height: 100px }
-      #cta { position: relative; left: 0; top: 700px; border: 1px solid black; border-top: 4px solid #666; background: white; padding: 16px; text-align: right }
-      #cta a { position: relative; right: 0; background: black; padding: 4px; font-size: 18px}
     div(class='container')
-      h1 Embed
-        div(id='cta') 
-          a(href='javascript:alert("you got it right!");') check &gt;
+      h1= journey.title
+      h2= journey.topic
         div(id='og-frame-holder')
           script.
+            var gid = "#{step.gid}";
+            var qs = "#{step.qs}";
+          
+          script.
             require(["embed/embed"], function(embed) {
-              var gid = "gy8b9zzxll"; // "gdywsqy1hn";
+              //var gid = "gy8b9zzxll"; // "gdywsqy1hn";
               embed(gid, {
                 frameContainerId: "og-frame-holder",
                 exitGameUrl: "http://www.bbc.co.uk/bitesize/",

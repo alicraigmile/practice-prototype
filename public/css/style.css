@@ -9,6 +9,9 @@ min-height: 180px;
 max-width:600px;
 border-bottom: 1px solid #eee;
 }
+
+#og-frame-holder { width: 600px; }
+
 h1 {
  background-color: black;
   color: #fff; 

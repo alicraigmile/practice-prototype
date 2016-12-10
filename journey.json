@@ -1,0 +1,26 @@
+{
+  "title": "Understanding 3D shapes",
+  "topic": "Algebra",
+  "steps": [
+    {
+      "type": "activity",
+      "gid": "gy8b9zzxll",
+      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-7&language=en-GB",
+      "link1title": "Check",
+      "link1step": 2
+    },
+    {
+      "type": "html",
+      "page": "frame1",
+      "link1title": "Next activity",
+      "link1step": 3
+    },
+    {
+      "type": "activity",
+      "gid": "gy8b9zzxll",
+      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-3&language=en-GB",
+      "link1title": "Restart",
+      "link1step": 1
+    }
+  ]
+}
