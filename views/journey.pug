@@ -24,6 +24,7 @@ html
       #frame
         h1= journey.title
         h2= journey.topic
+        h2 Step #{parseInt(stepId)+1} of #{journey.steps.length}
         if step
           if step.type == 'activity'
             div(id='og-frame-holder').activity
