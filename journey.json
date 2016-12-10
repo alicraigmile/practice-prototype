@@ -1,26 +1,29 @@
 {
-  "title": "Understanding 3D shapes",
-  "topic": "Algebra",
+  "title": "What is electricity?",
+  "topic": "KS2 Science",
+  "background": "http://ichef.bbci.co.uk/images/ic/1600xn/p04gdmvh.png",
   "steps": [
     {
       "type": "activity",
       "gid": "gy8b9zzxll",
-      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-7&language=en-GB",
-      "link1title": "Check",
-      "link1step": 2
+      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zstrk2p/config.json&palette=colour-palette-7&language=en-GB"
     },
     {
       "type": "html",
-      "page": "frame1",
-      "link1title": "Next activity",
-      "link1step": 3
+      "html": "<p>You're doing a grand job! Keep up the good work. <a href='/journey/steps/2'>Onwards learner!</a></p>"
     },
     {
       "type": "activity",
       "gid": "gy8b9zzxll",
-      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-3&language=en-GB",
-      "link1title": "Restart",
-      "link1step": 1
+      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-3&language=en-GB"
+    },
+    {
+      "type": "html",
+      "html": "<p>Fantastic - you've done it!</p><p>Now you officially Rock at Science a little bit more than you did earlier today.</p><img src='/images/tick.gif'>"
+    },
+    {
+      "type": "html",
+      "html": "<p>fin</p>"
     }
   ]
 }

@@ -1,6 +1,7 @@
 html
   head
-    title= journey.title
+    title
+      | #{journey.title} | KS2 Science | BBC Bitesize
     meta(charset="utf-8")
     script(src='/bower_components/requirejs/require.js')
     script(src='/bower_components/jquery/dist/jquery.min.js')
@@ -8,35 +9,50 @@ html
     script(src='/bower_components/bootstrap-combobox/js/bootstrap-combobox.js')
     link(rel='stylesheet', href='/bower_components/bootstrap-combobox/css/bootstrap-combobox.css')
     link(rel='stylesheet', href='/bower_components/bootstrap/dist/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/style.css')
     script.										
       require.config({
         paths: {
           "embed": "http://play.bbc.co.uk/play/sdk/embed/v1/latest"
         }
       });
-  body
     style.
-      #og-frame-holder { border: 1px solid black; height: 100px }
-    div(class='container')
-      h1= journey.title
-      h2= journey.topic
-        div(id='og-frame-holder')
-          script.
-            var gid = "#{step.gid}";
-            var qs = "#{step.qs}";
+      body { background: url('#{journey.background}'); padding: 16px; background-position: center;  }
+
+  body 
+    .container
+      #frame
+        h1= journey.title
+        h2= journey.topic
+        if step
+          if step.type == 'activity'
+            div(id='og-frame-holder').activity
+              div.loading Loading activity...
+              script.
+                var gid = "#{step.gid}";
+                var qs = "#{step.qs}";
           
-          script.
-            require(["embed/embed"], function(embed) {
-              //var gid = "gy8b9zzxll"; // "gdywsqy1hn";
-              embed(gid, {
-                frameContainerId: "og-frame-holder",
-                exitGameUrl: "http://www.bbc.co.uk/bitesize/",
-                queryString: "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-7&language=en-GB"
-              });
-            });
+              script.
+                require(["embed/embed"], function(embed) {
+                  embed(gid, {
+                    frameContainerId: "og-frame-holder",
+                    exitGameUrl: "http://www.bbc.co.uk/bitesize/",
+                    queryString: qs
+                  });
+                });
+          else
+            div(id='og-frame-holder').html.
+               !{step.html}
+        else 
+          div(id='og-frame-holder').html
+            p Step #{stepId} not found
+      ul
+        li
+          - var next = parseInt(stepId) + 1;
+          a(href='/journey/steps/'+next) Next step
+
       aside
         p
-          | © 2016 BBC |
-          = ' by '
-          a(href='mailto:ali.craigmile@bbc.co.uk') Ali Craigmile
+          | © 2016 BBC Bitesize | 
+          a(href='/') Index
 
