@@ -1,0 +1,23 @@
+{
+  "title": "Are cats a thing?",
+  "topic": "KS2 Science",
+  "steps": [
+    {
+      "type": "html",
+      "html": "<p>I bet you think cats are a thing, don't you? <a href='/journeys/cats/steps/2'>Let's find out</a></p>"
+    },
+    {
+      "type": "html",
+      "html": "<p>Yes! Cats are a thing!</p><p><img height='200' src='/images/cats.jpg'></p><p><a href='/journeys/cats/steps/3'>Now, an activity</a></p>"
+    },
+    {
+      "type": "activity",
+      "gid": "gy8b9zzxll",
+      "qs": "?configURL=http://a.files.bbci.co.uk/bam/live/content/zc46p39/config.json&palette=colour-palette-3&language=en-GB"
+    },
+    {
+      "type": "html",
+      "html": "<p>Fantastic - you've done it!</p><p>Now you officially Rock at Science a little bit more than you did earlier today.</p><img src='/images/tick.gif'>"
+    } 
+  ]
+}
