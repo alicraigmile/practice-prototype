@@ -47,10 +47,10 @@ hcktml
                !{step.html}
         else 
           div(id='og-frame-holder').html
-            p Step #{stepId} not found
+            p Step #{parseInt(stepId)+1} not found
       ul
         li
-          - var next = parseInt(stepId) + 1;
+          - var next = parseInt(stepId) + 2; // adjust for zero-index, then add one
           a(href='/journeys/'+journeyId+'/steps/'+next) Next step
 
       aside
