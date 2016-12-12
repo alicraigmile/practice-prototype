@@ -1,22 +1,22 @@
 {
-  "name": "game-embed-spike",
-  "version": "1.0.0",
+  "name": "practice-prototype",
+  "version": "1.1.0",
   "description": "Playing around with Open Games Embed",
   "scripts": {
-    "start": "node ./bin/games-embed-spike",
+    "start": "node ./bin/practice-prototype",
     "test": "mocha test/",
 		"postinstall": "node_modules/.bin/bower install"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bbc/games-embed-spike.git"
+    "url": "git+https://github.com/alicraigmile/practice-prototype.git"
   },
   "author": "Ali Craigmile <ali.craigmile@bbc.co.uk>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/bbc/games-embed-spike/issues"
+    "url": "https://github.com/bbc/alicraigmile/issues"
   },
-  "homepage": "https://github.com/bbc/games-embed-spike#readme",
+  "homepage": "https://github.com/bbc/alicraigmile#readme",
   "dependencies": {
     "bower": "^1.8.0",
     "chai": "^3.5.0",
