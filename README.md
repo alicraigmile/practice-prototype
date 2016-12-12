@@ -12,5 +12,15 @@ npm start
 
 There are 2 example journeys to copy from.
 
+## ELB
+
+This node.JS application can run in AWS ELB. To build for that run:
+
+```
+git archive --format=zip HEAD > practice-prototype-1.1.3.zip
+```
+
+
+
 
 
